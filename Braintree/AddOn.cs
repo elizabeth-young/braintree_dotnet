@@ -1,3 +1,5 @@
+using System;
+
 #pragma warning disable 1591
 
 namespace Braintree
@@ -5,6 +7,9 @@ namespace Braintree
     public class AddOn : Modification
     {
         protected internal AddOn(NodeWrapper node) : base(node) {
-        }
+        }      
+
+        [Obsolete("Mock Use Only")]
+        protected AddOn() { }
     }
 }

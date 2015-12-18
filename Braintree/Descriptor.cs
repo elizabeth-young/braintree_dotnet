@@ -18,5 +18,8 @@ namespace Braintree
                 Url = node.GetString("url");
             }
         }
+
+        [Obsolete("Mock Use Only")]
+        protected internal Descriptor() { }
     }
 }

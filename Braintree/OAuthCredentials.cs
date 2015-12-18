@@ -33,5 +33,8 @@ namespace Braintree
         {
             get; set;
         }
+
+        [Obsolete("Mock Use Only")]
+        protected internal OAuthCredentials() { }
     }
 }

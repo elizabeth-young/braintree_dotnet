@@ -18,5 +18,8 @@ namespace Braintree
             ImageUrl = node.GetString("image-url");
             SourceDescription = node.GetString("source-description");
         }
+
+        [Obsolete("Mock Use Only")]
+        protected VenmoAccountDetails() { }
     }
 }

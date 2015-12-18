@@ -1,3 +1,5 @@
+using System;
+
 #pragma warning disable 1591
 
 namespace Braintree
@@ -6,5 +8,8 @@ namespace Braintree
     {
         protected internal Discount(NodeWrapper node) : base(node) {
         }
+
+        [Obsolete("Mock Use Only")]
+        protected Discount() { }
     }
 }
